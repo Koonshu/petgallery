@@ -1,5 +1,5 @@
 /* Object handling the pictures of the gallery 
-and the dropdown menu to filter the pictures based on the selection of the user */
+and the dropdown menu to filter the pictures based on the selection */
 let filterPictures = {
   selectBtn : document.querySelector("#filter-select"),
   selectBtnText : document.querySelector("#filter-select span"),
@@ -10,7 +10,7 @@ let filterPictures = {
   resetBtn : document.querySelector("#reset-btn"),
 
   /* Init function, to handle the clicks to toggle the dropdown menu
-  and filter the pictures based on the selection by the user */
+  and filter the pictures based on the selection */
   init: function() {
     var self = this;
 
@@ -43,6 +43,7 @@ let filterPictures = {
     self.filterWrapper.classList.toggle("close");
     self.galleryWrapper.classList.toggle("blur");
 
+    // Toggle the aria-expanded of the dropdown menu, for accessibility
     self.selectBtn.setAttribute(
       'aria-expanded', 
       self.selectBtn.getAttribute('aria-expanded') === 'true' 
@@ -76,14 +77,14 @@ let filterPictures = {
     }
   },
 
-  // Change the text of the filter to show the current selection to the user
+  // Change the text of the filter to show the current selection
   changeTextFilter : function(newText) {
     var self = this;
 
     self.selectBtn.classList.add('selected');
     self.selectBtnText.innerHTML = newText;
     
-    // We show the button to reset the selection of the user
+    // We show the button to reset the selection
     self.resetBtn.classList.remove('hidden');
   },
 
@@ -93,7 +94,7 @@ let filterPictures = {
     self.selectBtn.classList.remove('selected');
     self.selectBtnText.innerHTML = self.selectBtnText.dataset.text;
 
-    // We hide the button to reset the selection of the user
+    // We hide the button to reset the selection
     self.resetBtn.classList.add('hidden');
   },
 

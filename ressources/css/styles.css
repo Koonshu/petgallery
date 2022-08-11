@@ -32,6 +32,7 @@
 
 body {
     background-color: #d7d8d6;
+    font-family: 'Source Sans 3', Arial, sans-serif;
 }
 
 
@@ -81,7 +82,6 @@ body {
     border-radius: 82px;
     height: 82px;
     color: #d7d6d8;
-    font-family: 'Source Sans 3', Arial, sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 82px;
@@ -176,7 +176,6 @@ body {
 }
 #filter-list .filter {
     padding: 0 72px;
-    font-family: 'Source Sans 3', Arial, sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #140f2d;
@@ -212,7 +211,7 @@ body {
 
 #reset-btn {
     position: absolute;
-    top: 32px;
+    top: 30px;
     right: 130px;
     z-index: 4;
     display: block;
@@ -284,8 +283,8 @@ body {
     padding: 8px 15px;
     border-radius: 20px;
     box-shadow: rgba(20, 15, 45, 0.2) 0px 2px 8px 0px; /* same as #14OF2D 20% */
-    font-family: 'Source Sans 3', Arial, sans-serif;
     font-weight: 300;
     font-size: 12px;
+    color: #140f2d;
 }
 
