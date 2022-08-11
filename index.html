@@ -8,6 +8,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Pet Gallery" />
 
+	<!-- Import fonts from Google API -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet"> 
+
 	<link type="text/css" rel="stylesheet" href="ressources/css/styles.css">
 
 	<!-- Favicon -->
@@ -33,8 +38,8 @@
 				<button id="filter-select" aria-expanded="false"><span data-text="Filter">Filter</span></button>
 				<button id="reset-btn" class="filter hidden" data-filter="reset">Reset</button>
 				<ul id="filter-list">
-					<li><button class="filter dogs" data-filter="dog">Dogs</button></li>
 					<li><button class="filter cats" data-filter="cat">Cats</button></li>
+					<li><button class="filter dogs" data-filter="dog">Dogs</button></li>
 					<li><button class="filter birds" data-filter="bird">Birds</button></li>
 				</ul>
 			</div><!-- #filter-wrapper -->

@@ -6,27 +6,6 @@
 
 
 /***
-    Fonts
-***/
-
-@font-face {
-    font-family: 'rammetto';
-    src: url('../fonts/rammettoone-regular-webfont.woff2') format('woff2'),
-         url('../fonts/rammettoone-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'source_sans_3';
-    src: url('../fonts/sourcesans3-variablefont_wght-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesans3-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/***
     General style
 ***/
 
@@ -37,11 +16,12 @@
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
-@media (max-width: 1199.98px) {
+/* Same breackpoint as Bootstrap (xxl) */
+@media (max-width: 1399.98px) {
     .wrapper {
         width: 100%;
+        padding: 0 20px;
     }
 }
 
@@ -89,6 +69,7 @@ body {
 #filter-wrapper button:hover {
     cursor: pointer;
 }
+/* Same breackpoint as Bootstrap (md) */
 @media (max-width: 767.98px) {
    #filter-wrapper {
         width: 100%;
@@ -100,9 +81,9 @@ body {
     border-radius: 82px;
     height: 82px;
     color: #d7d6d8;
-    font-family: source_sans_3, Arial, sans-serif;
-    font-weight: 900;
-    font-size: 16px;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
     line-height: 82px;
     padding-left: 80px;
     position: relative;
@@ -194,9 +175,9 @@ body {
 }
 #filter-list .filter {
     padding: 0 72px;
-    font-family: source_sans_3, Arial, sans-serif;
-    font-weight: 900;
-    font-size: 16px;
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
     color: #140f2d;
     position: relative;
     height: 80px;
@@ -266,6 +247,7 @@ body {
     z-index: 1;
     backdrop-filter: blur(5px);
 }
+/* Same breackpoint as Bootstrap (md and lg) */
 @media (min-width: 768px) and (max-width: 991.98px) {
    #gallery {
         -webkit-column-count: 2;
@@ -273,6 +255,7 @@ body {
         column-count:         2; 
     } 
 }
+/* Same breackpoint as Bootstrap (md) */
 @media (max-width: 767.98px) {
    #gallery {
         -webkit-column-count: 1;
@@ -287,7 +270,7 @@ body {
     margin-bottom: 27px;
 }
 .gallery-item img {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     box-shadow: rgba(20, 15, 45, 0.2) 0px 10px 36px 0px; /* same as #14OF2D 20% */
 }
 .gallery-item .tags {
@@ -298,9 +281,9 @@ body {
     margin-right: 9px;
     background: #fff;
     padding: 8px 15px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: rgba(20, 15, 45, 0.2) 0px 2px 8px 0px; /* same as #14OF2D 20% */
-    font-family: source_sans_3, Arial, sans-serif;
+    font-family: 'Source Sans 3', Arial, sans-serif;
     font-weight: 300;
     font-size: 12px;
 }
