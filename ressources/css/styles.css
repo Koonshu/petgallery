@@ -50,6 +50,9 @@ body {
     padding-top: 25px;
 }
 @media (max-width: 767.98px) {
+    #header-wrapper {
+        margin-bottom: 42px;
+    }
     #logo {
         width: 234px;
         margin: 0 auto;
@@ -74,6 +77,7 @@ body {
 @media (max-width: 767.98px) {
    #filter-wrapper {
         width: 100%;
+        margin-bottom: 32px;
     }
 }
 
