@@ -7,6 +7,7 @@ let filterPictures = {
   galleryWrapper : document.querySelector("#gallery"),
   filterBtn : Array.from(document.querySelectorAll(".filter")),
   pictures : Array.from(document.querySelectorAll(".gallery-item")),
+  resetBtn : document.querySelector("#reset-btn"),
 
   /* Init function, to handle the clicks to toggle the dropdown menu
   and filter the pictures based on the selection by the user */
@@ -60,12 +61,19 @@ let filterPictures = {
       if (currentPicture.dataset.category === clickedBtn) {
         currentPicture.classList.remove("hidden");
         continue;
-      }   
+      } else if( clickedBtn === "reset"){
+        currentPicture.classList.remove("hidden");
+        continue;
+      }     
       currentPicture.classList.add("hidden");
     }
 
-    self.toggleFilterListDisplayed();
-    self.changeTextFilter(textClickedBtn);
+    if(clickedBtn !== "reset") {
+      self.toggleFilterListDisplayed();
+      self.changeTextFilter(textClickedBtn);
+    } else {
+      self.resetTextFilter();
+    }
   },
 
   // Change the text of the filter to show the current selection to the user
@@ -77,7 +85,17 @@ let filterPictures = {
     
     // We show the button to reset the selection of the user
     self.resetBtn.classList.remove('hidden');
-  }
+  },
+
+  resetTextFilter : function() {
+    var self = this;
+
+    self.selectBtn.classList.remove('selected');
+    self.selectBtnText.innerHTML = self.selectBtnText.dataset.text;
+
+    // We hide the button to reset the selection of the user
+    self.resetBtn.classList.add('hidden');
+  },
 
 
 }

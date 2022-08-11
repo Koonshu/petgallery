@@ -228,6 +228,19 @@ body {
     background-image: url(../img/crow-solid.svg);
 }
 
+#reset-btn {
+    position: absolute;
+    top: 32px;
+    right: 130px;
+    z-index: 4;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/x-circle.svg);
+    background-repeat: no-repeat;
+    text-indent: -9000px;
+}
+
 
 /***
     Gallery
