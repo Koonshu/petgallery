@@ -13,6 +13,9 @@ let filterPictures = {
   init: function() {
     var self = this;
 
+    // Randomize the order of the pictures
+    self.randomizeOrderPictures();
+
     // Handle the click to toggle the dropdown menu
     self.selectBtn.addEventListener("click", self.toggleFilterListDisplayed);
 
@@ -20,6 +23,16 @@ let filterPictures = {
     self.filterBtn.forEach(function(elem) {
       elem.addEventListener("click", self.filterPicturesByCategory);
     });
+  },
+
+  /* Just for the example, this function randomize the position of each pictures
+  to have like a new page every time we refresh the page */
+  randomizeOrderPictures : function() {
+    var self = this;
+
+    for (var i = self.galleryWrapper.children.length; i >= 0; i--) {
+      self.galleryWrapper.appendChild(self.galleryWrapper.children[Math.random() * i | 0]);
+    }
   },
 
   // Toggle the dropdown menu
