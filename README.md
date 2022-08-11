@@ -1,6 +1,7 @@
 # petgallery
-Displays pictures of animals with the possibility of filtering them
-Project developed for a job interview with Insider Guides
+Displays pictures of animals with the possibility of filtering them.
+
+Project developed for a job interview with Insider Guides.
 
 This page was developed without the use of any frameworks or libraries. It's just HTML / CSS / Javascript.
 
