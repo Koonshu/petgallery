@@ -9,9 +9,515 @@
 	<meta name="description" content="Pet Gallery" />
 
 	<link type="text/css" rel="stylesheet" href="ressources/css/styles.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="ressources/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="ressources/img/favicon-16x16.png">
 </head>
 <body>
-	
+	<header id="header-wrapper" role="banner">
+		<div class="wrapper">
+			<h1 id="logo">
+				<picture>
+					<source media="(min-width: 768px)" srcset="ressources/img/PetGallery-Logo.png 1x, ressources/img/PetGallery-Logo-2x.png 2x" type="image/png" />
+					<source media="(max-width: 767px)" srcset="ressources/img/PetGallery-Logo-Mobile.png 1x, ressources/img/PetGallery-Logo-Mobile-2x.png 2x" type="image/png" />
+					<img src="ressources/img/PetGallery-Logo-2x.png" alt="PetGallery" title="Logo PetGallery" />
+				</picture>
+			</h1>
+		</div><!-- .wrapper -->
+	</header>
+
+	<main id="gallery-wrapper">
+		<div class="wrapper">
+			<div id="filter-wrapper" class="close">
+				<button id="filter-select" aria-expanded="false"><span data-text="Filter">Filter</span></button>
+				<ul id="filter-list">
+					<li><button class="filter dogs" data-filter="dog">Dogs</button></li>
+					<li><button class="filter cats" data-filter="cat">Cats</button></li>
+					<li><button class="filter birds" data-filter="bird">Birds</button></li>
+				</ul>
+			</div><!-- #filter-wrapper -->
+
+			<ul id="gallery">
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-1.jpeg" title="Dog 1" alt="Dog 1" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Cute Background</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-2.jpeg" title="Dog 2" alt="Dog 2" />
+					<ul class="tags">
+						<li>Dog</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-3.jpeg" title="Dog 3" alt="Dog 3" />
+					<ul class="tags">
+						<li>Hd Cute Wallpapers</li>
+						<li>Bokeh</li>
+						<li>Dog</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-4.jpeg" title="Dog 4" alt="Dog 4" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Red Background</li>
+						<li>Christmas</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-5.jpeg" title="Dog 5" alt="Dog 5" />
+					<ul class="tags">
+						<li>Hd Cute Wallpapers</li>
+						<li>Bokeh</li>
+						<li>Dog</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-6.jpeg" title="Dog 6" alt="Dog 6" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Cute Background</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-7.jpeg" title="Dog 7" alt="Dog 7" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Cute Background</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-8.jpeg" title="Dog 8" alt="Dog 8" />
+					<ul class="tags">
+						<li>Dog</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-9.jpeg" title="Dog 9" alt="Dog 9" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Cute Background</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-10.jpeg" title="Dog 10" alt="Dog 10" />
+					<ul class="tags">
+						<li>Hd Cute Wallpapers</li>
+						<li>Bokeh</li>
+						<li>Dog</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-11.jpeg" title="Dog 11" alt="Dog 11" />
+					<ul class="tags">
+						<li>Hd Cute Wallpapers</li>
+						<li>Bokeh</li>
+						<li>Dog</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-12.jpeg" title="Dog 12" alt="Dog 12" />
+					<ul class="tags">
+						<li>Dog</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-13.jpeg" title="Dog 13" alt="Dog 13" />
+					<ul class="tags">
+						<li>Dog</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-14.jpeg" title="Dog 14" alt="Dog 14" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Cute Background</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-15.jpeg" title="Dog 15" alt="Dog 15" />
+					<ul class="tags">
+						<li>Dog</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-16.jpeg" title="Dog 16" alt="Dog 16" />
+					<ul class="tags">
+						<li>Hd Cute Wallpapers</li>
+						<li>Bokeh</li>
+						<li>Dog</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-17.jpeg" title="Dog 17" alt="Dog 17" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Cute Background</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-18.jpeg" title="Dog 18" alt="Dog 18" />
+					<ul class="tags">
+						<li>Dog</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-19.jpeg" title="Dog 19" alt="Dog 19" />
+					<ul class="tags">
+						<li>Hd Cute Wallpapers</li>
+						<li>Bokeh</li>
+						<li>Dog</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="dog">
+					<img src="pictures/dogs/Dogs-20.jpeg" title="Dog 20" alt="Dog 20" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Cute Background</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+
+
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-1.jpeg" title="Cat 1" alt="Cat 1" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-2.jpeg" title="Cat 2" alt="Cat 2" />
+					<ul class="tags">
+						<li>Cat</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-3.jpeg" title="Cat 3" alt="Cat 3" />
+					<ul class="tags">
+						<li>Paw</li>
+						<li>Canon</li>
+						<li>Cat</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-4.jpeg" title="Cat 4" alt="Cat 4" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-5.jpeg" title="Cat 5" alt="Cat 5" />
+					<ul class="tags">
+						<li>Cat</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-6.jpeg" title="Cat 6" alt="Cat 6" />
+					<ul class="tags">
+						<li>Paw</li>
+						<li>Canon</li>
+						<li>Cat</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-7.jpeg" title="Cat 7" alt="Cat 7" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-8.jpeg" title="Cat 8" alt="Cat 8" />
+					<ul class="tags">
+						<li>Cat</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-9.jpeg" title="Cat 9" alt="Cat 9" />
+					<ul class="tags">
+						<li>Paw</li>
+						<li>Canon</li>
+						<li>Cat</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-10.jpeg" title="Cat 10" alt="Cat 10" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-11.jpeg" title="Cat 11" alt="Cat 11" />
+					<ul class="tags">
+						<li>Cat</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-12.jpeg" title="Cat 12" alt="Cat 12" />
+					<ul class="tags">
+						<li>Paw</li>
+						<li>Canon</li>
+						<li>Cat</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-13.jpeg" title="Cat 13" alt="Cat 13" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-14.jpeg" title="Cat 14" alt="Cat 14" />
+					<ul class="tags">
+						<li>Cat</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-15.jpeg" title="Cat 15" alt="Cat 15" />
+					<ul class="tags">
+						<li>Paw</li>
+						<li>Canon</li>
+						<li>Cat</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-16.jpeg" title="Cat 16" alt="Cat 16" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-17.jpeg" title="Cat 17" alt="Cat 17" />
+					<ul class="tags">
+						<li>Cat</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-18.jpeg" title="Cat 18" alt="Cat 18" />
+					<ul class="tags">
+						<li>Paw</li>
+						<li>Canon</li>
+						<li>Cat</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="cat">
+					<img src="pictures/Cats/Cats-19.jpeg" title="Cat 19" alt="Cat 19" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+
+
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-1.jpeg" title="Bird 1" alt="Bird 1" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-2.jpeg" title="Bird 2" alt="Bird 2" />
+					<ul class="tags">
+						<li>Bird</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-3.jpeg" title="Bird 3" alt="Bird 3" />
+					<ul class="tags">
+						<li>Claw</li>
+						<li>Canon</li>
+						<li>Bird</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-4.jpeg" title="Bird 4" alt="Bird 4" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-5.jpeg" title="Bird 5" alt="Bird 5" />
+					<ul class="tags">
+						<li>Bird</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-6.jpeg" title="Bird 6" alt="Bird 6" />
+					<ul class="tags">
+						<li>Claw</li>
+						<li>Canon</li>
+						<li>Bird</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-7.jpeg" title="Bird 7" alt="Bird 7" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-8.jpeg" title="Bird 8" alt="Bird 8" />
+					<ul class="tags">
+						<li>Bird</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-9.jpeg" title="Bird 9" alt="Bird 9" />
+					<ul class="tags">
+						<li>Claw</li>
+						<li>Canon</li>
+						<li>Bird</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-10.jpeg" title="Bird 10" alt="Bird 10" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-11.jpeg" title="Bird 11" alt="Bird 11" />
+					<ul class="tags">
+						<li>Bird</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-12.jpeg" title="Bird 12" alt="Bird 12" />
+					<ul class="tags">
+						<li>Claw</li>
+						<li>Canon</li>
+						<li>Bird</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-13.jpeg" title="Bird 13" alt="Bird 13" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-14.jpeg" title="Bird 14" alt="Bird 14" />
+					<ul class="tags">
+						<li>Bird</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-15.jpeg" title="Bird 15" alt="Bird 15" />
+					<ul class="tags">
+						<li>Claw</li>
+						<li>Canon</li>
+						<li>Bird</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-16.jpeg" title="Bird 16" alt="Bird 16" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-17.jpeg" title="Bird 17" alt="Bird 17" />
+					<ul class="tags">
+						<li>Bird</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-18.jpeg" title="Bird 18" alt="Bird 18" />
+					<ul class="tags">
+						<li>Claw</li>
+						<li>Canon</li>
+						<li>Bird</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-19.jpeg" title="Bird 19" alt="Bird 19" />
+					<ul class="tags">
+						<li>Pet</li>
+						<li>Adorable</li>
+						<li>Animal Pictures</li>
+					</ul>
+				</li>
+				<li class="gallery-item" data-category="bird">
+					<img src="pictures/Birds/Bird-20.jpeg" title="Bird 20" alt="Bird 20" />
+					<ul class="tags">
+						<li>Bird</li>
+						<li>Adorable</li>
+						<li>Animal</li>
+					</ul>
+				</li>
+			</ul><!-- #gallery -->
+		</div><!-- .wrapper -->
+	</main><!-- #gallery-wrapper -->
 
  	<script src="ressources/js/scripts.js"></script>
 
